@@ -140,7 +140,7 @@ For example `useShare`:
 
 ```ts
 export function useShare(
-  shareOptions: MaybeRef<ShareOptions> = {},
+  shareOptions: MaybeRef<UseShareOptions> = {},
   options: ConfigurableNavigator = {},
 ) {
   const { navigator = defaultNavigator } = options

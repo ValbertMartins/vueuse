@@ -31,8 +31,9 @@ You can pass a `ref` to it, changes from the source ref will be reflected to you
 
 ```js {7}
 import { ref } from 'vue'
+import { useShare, type UseShareOptions } from '@vueuse/core'
 
-const shareOptions = ref < ShareOptions > ({ text: 'foo' })
+const shareOptions = ref<UseShareOptions>({ text: 'foo' })
 const { share, isSupported } = useShare(shareOptions)
 
 shareOptions.value.text = 'bar'
